@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap" rel="stylesheet"/>
+    <title>Industrial Quality Works | IQW</title>
+
+    <style>
+        /* Custom styles for dynamic text */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 40px;
+        }
+
+        .text {
+            position: left;
+            width: 500px;
+            left: 0%;
+            margin-left: -15px;
+            height: 40px;
+            top: 50%;
+            margin-top: -20px;
+        }
+
+        p {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0;
+        }
+
+        .word {
+            position: absolute;
+            width: 220px;
+            opacity: 0;
+        }
+
+        .letter {
+            display: inline-block;
+            position: relative;
+            float: left;
+            transform: translateZ(25px);
+            transform-origin: 50% 50% 25px;
+        }
+
+        .letter.out {
+            transform: rotateX(90deg);
+            transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        }
+
+        .letter.behind {
+            transform: rotateX(-90deg);
+        }
+
+        .letter.in {
+            transform: rotateX(0deg);
+            transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .wisteria {
+            color: #4fe835;
+        }
+
+        .belize {
+            color: #2980b9;
+        }
+
+        .pomegranate {
+            color: #c0392b;
+        }
+
+        .green {
+            color: #16a085;
+        }
+
+        .midnight {
+            color: #cfd919;
+        }
+
+        /* Navbar custom styles */
+        .navbar-brand {
+            font-size: 2vw; /* Adjust as needed */
+            text-transform: uppercase;
+            position: relative;
+            white-space: nowrap;
+            color: #fff !important;
+        }
+
+        /* Additional custom styles */
+        #banner-col2 img {
+            width: 110%; /* Increase size by 10% */
+        }
+
+        #service img {
+            display: block;
+            margin: 0 auto; /* Center the images */
+        }
+    </style>
+</head>
+
+<body>
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid">
+                <div class="text">
+                    <p>WELCOME TO THE REAL</p>
+                    <p>
+                        <span class="word wisteria">QUALITY</span>
+                        <span class="word belize">IMPROVEMENT</span>
+                        <span class="word pomegranate">SATISFACTION</span>
+                        <span class="word green">EFFICIENCY</span>
+                        <span class="word midnight">SUCCESS</span>
+                    </p>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#service">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#product">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#social">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+<!-- Banner -->
+<section id="banner">
+    <div class="container-fluid" id="banner-container">
+        <div class="row" id="banner-row">
+            <div class="col-md-6" id="banner-col">
+                <h3>TRANSFORMING QUALITY INTO TRUST</h3>
+                <p style="text-align: center; margin-left: 160px;">Where automotive quality meets excellence</p>
+                <br>
+                <br>
+                <br>
+                <div class="d-grid gap-2 d-md-flex justify-content-center">
+                    <a href="#social" class="btn btn-primary" role="button">Contact Us</a>
+                </div>
+            </div>
+            <div class="col-md-5" id="banner-col2">
+                <img src="C:\Users\Nestor Quiñones\Desktop\IQW WebPage\Images\logo 2.png" alt="banner" class="img-responsive rounded mx-auto d-block">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- services -->
+    <section id="service">
+        <h1 class="text-center">OUR SERVICES</h1>
+        <div class="container-fluid" id="service-container">
+            <div class="row" id="banner-row">
+                <div class="col-md-4" id="service-col1">
+                    <img src="C:\Users\Nestor Quiñones\Desktop\IQW WebPage\Images\A_quality_inspector_on_the_automotive_industry_performing_insp_33b3928c-10c0-4770-b4ad-a6d7b60af89a.png" class="img-fluid rounded mx-auto d-block" alt="services">
+                    <h3>Part Sorting and Reworking</h3>
+                    <p>At IQW (Industrial Quality Works), we offer comprehensive Part Sorting and Reworking services to ensure that your manufacturing processes run smoothly and efficiently. Our goal is to help you maintain the highest standards of quality, reduce waste, and improve overall productivity.</p>
+                </div>
+                <div class="col-md-4" id="service-col2">
+                    <img src="C:\Users\Nestor Quiñones\Desktop\IQW WebPage\Images\laison.png" class="img-fluid rounded mx-auto d-block" alt="services">
+                    <h3>Customer Representation</h3>
+                    <p>At IQW (Industrial Quality Works), we understand that effective communication and seamless coordination between manufacturers and clients are critical to the success of any project. Our Customer Representation service is designed to bridge the gap between your company and your customers, ensuring that their needs and expectations are met with precision and professionalism.</p>
+                </div>
+                <div class="col-md-4" id="service-col3">
+                    <img src="C:\Users\Nestor Quiñones\Desktop\IQW WebPage\Images\warehouse.png" class="img-fluid rounded mx-auto d-block" alt="services">
+                    <h3>Warehousing Services</h3>
+                    <p>At IQW (Industrial Quality Works), we understand the importance of efficient and secure storage for your valuable components and products. Our Warehousing Services are designed to provide you with the space, organization, and security you need to optimize your inventory management and streamline your supply chain operations. With +800 square feet of storage space available.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr/>
+
+<!-- about us -->
+<section id="about">
+    <h1 class="text-center">ABOUT US</h1>
+    <div class="container-fluid" id="about-container">
+        <div class="row" id="banner-row">
+            <div class="col-md-5" id="about-col" style="text-align: left;">
+                <ul style="font-size: 19px; list-style-type: none; padding: 0;">
+                    <li>
+                        IQW is a company based in Saltillo, Coahuila, the heart of the industrial region in northern Mexico. Born out of the need for truly effective quality services that set a new standard in the region. <br>
+                        <br>
+
+Our strategic location in Saltillo, an area renowned for its vibrant industrial activities, positions us perfectly to serve a diverse range of businesses. We are proud to be part of a community that thrives on manufacturing and industrial prowess, and we leverage this environment to continuously enhance our service offerings.<br>
+<br>
+
+At IQW, we believe that quality is not just a goal but a continuous journey. This belief drives us to implement the latest technologies and methodologies in all our processes. Our team of experts is dedicated to maintaining the highest standards of service, ensuring that every project we undertake meets and exceeds the expectations of our clients. <br>
+<br>
+Our commitment to innovation is evident in our proactive approach to problem-solving and our readiness to adapt to the evolving needs of the industry. We are constantly exploring new ways to improve efficiency, reduce costs, and deliver superior results for our clients. <br>
+<br>
+In summary, IQW is not just a company; it is a partner in your success. We are here to help you navigate the complexities of the industrial landscape with confidence, delivering results that make a real difference to your business. Join us on this journey, and let's set new standards of quality together
+                        
+                       </li>
+                    <img src="C:\Users\Nestor Quiñones\Desktop\IQW WebPage\Images\iparks.png" height="auto" width="auto" class="img-responsive rounded mx-auto d-block" style="margin-top: 50px;">
+                </ul>
+            </div>
+            <div class="col-md-7" id="banner-col2">
+                <div style="margin-top: 20px; text-align: center;">
+                    <div style="border: 2px solid #040563; padding: 10px; display: inline-block; margin-bottom: 20px;">
+                        <h2 style="margin: 0; padding: 5px; text-decoration: underline; text-decoration-color: #040563;">Our Values</h2>
+                    </div>
+                    <ul style="font-size: 19px; list-style-type: none; padding: 0; text-align: ce;">
+                        <li><p><strong>Quality:</strong> We strive to provide the highest quality services in everything we do.</p></li>
+                        <li><p><strong>Commitment:</strong> We are dedicated to the success of our clients and work closely with them to exceed their expectations.</p></li>
+                        <li><p><strong>Innovation:</strong> We utilize the latest technologies and methodologies to ensure our services are effective and efficient.</p></li>
+                        <li><p><strong>Integrity:</strong> We operate with the highest standards of ethics and transparency in all our interactions.</p></li>
+                    </ul>
+                    <div style="border: 2px solid #040563; padding: 10px; display: inline-block; margin-top: 20px;">
+                        <h2 style="margin: 0; padding: 5px; text-decoration: underline; text-decoration-color: #040563;">Our Mission</h2>
+                    </div>
+                    <p>To offer effective, high-quality services that meet the needs of our clients, ensuring their complete satisfaction and fostering long-term partnerships built on trust and excellence.</p>
+                    <div style="border: 2px solid #040563; padding: 10px; display: inline-block; margin-top: 20px;">
+                        <h2 style="margin: 0; padding: 5px; text-decoration: underline; text-decoration-color: #040563;">Our Vision</h2>
+                    </div>
+                    <p>To be the leading provider of quality services in the region, recognized for our commitment to excellence, innovation, and ethical practices. We aim to set new standards in the industry, continuously improving and expanding our services to meet the evolving needs of our clients.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 50px;">
+        <h2 style="text-decoration: underline; text-decoration-color: #080b99;">Proudly Clients of</h2>
+        <div style="margin-top: 20px; display: flex; justify-content: center; gap: 20px;">
+            <!-- Aquí puedes añadir los logos de tus clientes -->
+            <img src="C:\Users\Nestor Quiñones\Desktop\IQW WebPage\Images\adient.png" class="client-logo" alt="Adient">
+            <img src="C:\Users\Nestor Quiñones\Desktop\IQW WebPage\Images\magneti-marelli-logo.png" class="client-logo" alt="Magnetti Marelli">
+            <img src="C:\Users\Nestor Quiñones\Desktop\IQW WebPage\Images\mplastics.png" class="client-logo" alt="Mitchel Plastics">
+        </div>
+    </div>
+</section>
+
+<hr/>
+<style>
+.client-logo {
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+}
+</style>
+
+
+
+
+    <!-- products -->
+<section id="product">
+    <h1 class="text-center">OUR REACH AS A COMPANY</h1>
+    <div class="container-fluid" id="product-container">
+        <div class="row" id="banner-row">
+            <div class="col-md-6" id="about-col">
+                <img src="C:\Users\Nestor Quiñones\Desktop\IQW WebPage\Images\dayagram.png" class="img-responsive rounded mx-auto d-block" style="width: 100%;" alt="Product Image">
+            </div>
+            <div class="col-md-6" id="product-col2">
+                <ul style="font-size: 19px;">
+                    <li>We provide services for studies and implementation of programs, graphics, diagrams, and techniques for effective quality control in commercial and industrial enterprises, aiming for continuous improvement in their products, services, and productivity.</li>
+                    <li>We offer industrial maintenance services, conducting studies, developing and supervising programs, and establishing procedures to optimize equipment, human resources, technology, and materials, with the goal of increasing efficiency and productivity in businesses and organizations.</li>
+                    <li>We conduct studies and projects for production, security in the installation of CCTV cameras, alarm systems, and automation of automatic and electronic gates.</li>
+                    <li>We provide general cleaning and maintenance services to commercial and industrial enterprises to maintain good hygiene and a proper image.</li>
+                    <li>We handle civil construction maintenance, building repairs, and all related activities to physically and functionally preserve the facilities of commercial or industrial enterprises.</li>
+                    <li>We perform welding work, repair, and maintenance of metal structures, assembly of automatic doors, and all associated activities.</li>
+                    <li>We offer security and surveillance services for people or property, including surveillance and protection of establishments.</li>
+                    <li>We are involved in the acquisition, refurbishment, and repair of forklifts, as well as their marketing and leasing, and provide technical repair and maintenance services.</li>
+                    <li>We sell and install air conditioning mini-splits, as well as wholesale and retail trade of electrical, electronic, and household appliances.</li>
+                    <li>We market, renew, and rebuild furniture, its parts, and accessories made of wood and derivatives.</li>
+                    <li>We provide gardening services, including designing, building, and maintaining green areas and all related gardening activities.</li>
+                    <li>We apply electrostatic powder coating to metal pieces for protection and finishing.</li>
+                    <li>We acquire and lease movable and immovable property, machinery, and equipment necessary to fulfill our social purpose.</li>
+                    <li>We enter into contracts and legal acts necessary to adequately fulfill our social purpose.</li>
+                    <li>We establish offices, agencies, branches, and subsidiaries anywhere in the country or abroad to expand our reach.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+<section id="social">
+    <section id="banner">
+        <div class="container-fluid" id="banner-container">
+            <div class="row" id="banner-row">
+                <div class="col-md-4" id="footer-col1">
+                    <h1 class="text-center">LET'S GET IN CONTACT</h1>
+                    <p>At IQW we believe that customers should always get easy-to-use, best in class, and fast services. IQW has achieved standards that help customers achieve satisfaction and realize value for their hard-earned money.</p>
+                </div>
+                <div class="col-md-4" id="footer-col2">
+                    <h3 class="text-center">REQUEST YOUR FREE QUOTATION</h3>
+                    <br>
+                    <p style=" margin-left: 81px;"> Email Us: Sells@iqualityworks.com</p>
+                    <br>
+                    <br>
+                    <p style="margin-left: 100px;"> Call Us: +52 844-667-71-16</p>
+                </div>
+                <div class="col-md-4" id="footer-col2">
+                    <h3 class="text-center">SCAN QR CODE</h3>
+                    <div class="col-md-6" id="about-col" style="margin: 0 auto; display: flex; justify-content: center; align-items: center;">
+                        <img src="C:\Users\Nestor Quiñones\Desktop\IQW WebPage\Images\frame (1).png" class="img-responsive rounded mx-auto d-block" style="transform: translateY(20px) scale(1.5);" alt="Product Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+ <!-- Bootstrap JS and dependencies -->
+ <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD9g6ZQLmsPRZLU/WTI7v0R6FGxBa3PW6cbQ5Oq8pBB5yK42pdtYXMptEnl3/p" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq8yD2d2Hf6S9tMEiO58+p3q6s5SKk6T+QEYNLCjq7tGNTsC4Y" crossorigin="anonymous"></script>
+
+ <!-- Custom JS for dynamic text -->
+ <script>
+     var words = document.getElementsByClassName('word');
+     var wordArray = [];
+     var currentWord = 0;
+
+     words[currentWord].style.opacity = 1;
+     for (var i = 0; i < words.length; i++) {
+         splitLetters(words[i]);
+     }
+
+     function changeWord() {
+         var cw = wordArray[currentWord];
+         var nw = currentWord == words.length - 1 ? wordArray[0] : wordArray[currentWord + 1];
+         for (var i = 0; i < cw.length; i++) {
+             animateLetterOut(cw, i);
+         }
+
+         for (var i = 0; i < nw.length; i++) {
+             nw[i].className = 'letter behind';
+             nw[0].parentElement.style.opacity = 1;
+             animateLetterIn(nw, i);
+         }
+
+         currentWord = (currentWord == wordArray.length - 1) ? 0 : currentWord + 1;
+     }
+
+     function animateLetterOut(cw, i) {
+         setTimeout(function () {
+             cw[i].className = 'letter out';
+         }, i * 80);
+     }
+
+     function animateLetterIn(nw, i) {
+         setTimeout(function () {
+             nw[i].className = 'letter in';
+         }, 340 + (i * 80));
+     }
+
+     function splitLetters(word) {
+         var content = word.innerHTML;
+         word.innerHTML = '';
+         var letters = [];
+         for (var i = 0; i < content.length; i++) {
+             var letter = document.createElement('span');
+             letter.className = 'letter';
+             letter.innerHTML = content.charAt(i);
+             word.appendChild(letter);
+             letters.push(letter);
+         }
+
+         wordArray.push(letters);
+     }
+
+     changeWord();
+     setInterval(changeWord, 4000);
+ </script>
+</body>
+</html>
